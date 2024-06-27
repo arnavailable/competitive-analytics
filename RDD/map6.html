@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_74ab8420facb7b33a29f6c163ca05a4d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_74ab8420facb7b33a29f6c163ca05a4d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_74ab8420facb7b33a29f6c163ca05a4d = L.map(
+                "map_74ab8420facb7b33a29f6c163ca05a4d",
+                {
+                    center: [34.073741999301504, -118.44387256392277],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_11da79ba2e5a418059a80c98b2002f9c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_11da79ba2e5a418059a80c98b2002f9c.addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+            var marker_433554f72c878eb2add6b7d10e25501c = L.marker(
+                [34.073741999301504, -118.44387256392277],
+                {}
+            ).addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+        var popup_eb0299643752d4ecea33942ecdbdd724 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b87f58efb1835975558c63462d75f643 = $(`<div id="html_b87f58efb1835975558c63462d75f643" style="width: 100.0%; height: 100.0%;">UCLA Anderson B313</div>`)[0];
+                popup_eb0299643752d4ecea33942ecdbdd724.setContent(html_b87f58efb1835975558c63462d75f643);
+            
+        
+
+        marker_433554f72c878eb2add6b7d10e25501c.bindPopup(popup_eb0299643752d4ecea33942ecdbdd724)
+        ;
+
+        
+    
+    
+            var circle_c51358a963630acac1357be9fb577046 = L.circle(
+                [34.073741999301504, -118.44387256392277],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3218.68, "stroke": true, "weight": 3}
+            ).addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+            var circle_803edaff20de0ac36251b703b57d64d6 = L.circle(
+                [34.073741999301504, -118.44387256392277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.7, "stroke": true, "weight": 3}
+            ).addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+            var circle_a57cdb00035bdf4a92ae00b647aa55d7 = L.circle(
+                [34.073741999301504, -118.44387256392277],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16093.4, "stroke": true, "weight": 3}
+            ).addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+            var circle_b7c8e6848a186fac00b9c5d5b21b5159 = L.circle(
+                [34.073741999301504, -118.44387256392277],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24140.1, "stroke": true, "weight": 3}
+            ).addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+            var circle_37c31f5ca3877a29a9b60cd8a7f138a0 = L.circle(
+                [34.073741999301504, -118.44387256392277],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32186.8, "stroke": true, "weight": 3}
+            ).addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+    
+            tile_layer_11da79ba2e5a418059a80c98b2002f9c.addTo(map_74ab8420facb7b33a29f6c163ca05a4d);
+        
+</script>
+</html>
